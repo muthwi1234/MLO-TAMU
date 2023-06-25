@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,200;0,300;0,400;0,500;0,700;1,400&family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+      
+      
+    />
+  </head>
+  <body>
+    <!-- Navbar Area  -->
+
+    <div class="container">
+      <div class="navbar-area">
+        <div class="logo">
+          <a href="#">MLO TAMU </a>
+          <i class="fas fa-utensils"></i>
+          <div class="add-box">
+            <i class="fa fa-map-marker"></i>
+            <span class="your-address">Your Address</span>
+          </div>
+          
+        </div>
+        <div class="navbar">
+          <a class="active" href="#">Home</a>
+          <a href="#">Menu</a>
+          <a href="#" id="loginLink">Login<a>
+          </div>
+          <div class="cart-icon" onclick="toggleCart()">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-items">0</span>
+          </div>
+        </div>
+        
+        <div class="cart-content" id="cartContent">
+          <h3>Cart</h3>
+          <ul id="cartItemsList"></ul>
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- Top Banner Area  -->
+
+    <section>
+      <div class="container">
+        <div class="haif">
+          <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1173&q=80"alt="top-img" />
+        </div>
+        <div class="haif">
+          <br />
+          <h1>
+            Contact Us For<br />
+            Best Breakfast
+          </h1>
+          <p>
+            🌞🍳 Contact Us for the Best Breakfast Experience! 🌞🍳
+            Are you in search of a breakfast experience that will start your day off on the right foot?
+            Look no further! We take pride in serving the best breakfast in town, and we can't wait to make 
+            your morning a memorable one.
+          </p>
+          <a class="orange" href="#"> Contact Us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Area  -->
+    
+
+    <section>
+      <div class="container">
+        <div class="haif">
+          <img src="https://i.pinimg.com/564x/23/d1/b6/23d1b662931537e22bf1d754ff2bdfaf.jpg" alt="about-img" />
+        </div>
+        <div class="haif">
+          <br />
+          <br />
+          <h1>About <span>Us</span></h1>
+          <p>
+            🍝🍷 Discover the Exquisite Flavors of Mlo Tamu Restaurant! 🍝🍷<br> Step into a world of culinary delight and immerse yourself in the enchanting flavors of Mlo Tamu Restaurant.<br> With our dedication to authenticity and passion for exceptional dining experiences,<br> we invite you to embark on a gastronomic journey that will transport you to<br> the heart of Italy.
+
+e every meal is a celebration of Italian culinary mastery! 🍝🍷
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service Area  -->
+
+    <div class="area">
+      <h1>Our <span>Services</span></h1>
+    </div>
+    <div class="row">
+      <div class="card">
+        <img src="https://i.pinimg.com/564x/1d/c5/e0/1dc5e0b35bacad9f9d2c0b112324646f.jpg" alt="" />
+        <h2>Good Food</h2>
+        <p>
+          At Mlo tamu,<br> we take great pride in providing exceptional service to our valued customers. 
+          From the moment you step through our doors, our dedicated team is committed to ensuring your
+           dining experience is nothing short of extraordinary.
+        </p>
+      </div>
+      <div class="card">
+        <img src="https://i.pinimg.com/236x/ea/2b/5b/ea2b5b6ee9b5eab560c11be40e3d37a5.jpg" alt="" />
+        <h2>Serve Fast</h2>
+        <p>
+          Experience Fast and Efficient Service atnMlo tamu!<br>Are you tired of waiting endlessly for your food at restaurants? 
+          At mlo tamu,we understand the value of your time and strive to provide you with quick and efficient 
+          service without compromising on quality. 
+        </p>
+      </div>
+      <div class="card">
+        <img src="https://i.pinimg.com/564x/7a/08/03/7a0803f16e1b837da83d0ef9c9823790.jpg" alt="">
+        <h2>Fast Delivery</h2>
+        <p>
+          Get Your Food Delivered Quickly with our Fast Delivery Service!
+          Hungry and craving delicious food? Don't worry, our fast delivery service has got you covered!
+        </p>
+      </div>
+    </div>
+     <!-- Gallery Section  -->
+     
+    
+
+    <!-- Gallery Section  -->
+    <h1>Food Menu</h1>
+    <div id="menu"></div>
+  
+    <div class="area">
+      <h1>Our Food <span>MENU</span></h1>
+      <div class="gallery">
+        <div class="card-1">
+          <img class="image responsive image resize" src="https://i.pinimg.com/564x/9d/3f/63/9d3f634d699fe9b4e31df796cad94e6c.jpg" alt="" />
+          <h3 class="rice and beef">makoroni</h3>
+      <p class="food-price">$10.99</p>
+      <button class="order-button" onclick="addToCart('Mak', 15.99)">Order</button> 
+        </div>
+        <div class="card-1">
+          <img  class="image responsive image resize" src="https://i.pinimg.com/564x/3f/cb/db/3fcbdb37705426f34bab8ef8f4603627.jpg" alt="" />
+          <h3 class="rice and beef">chapati kuku</h3>
+          <p class="food-price">$10.99</p>
+          <button class="order-button" onclick="addToCart('cWk', 10.99)">Order</button>
+        </div>
+        <div class="card-1">
+          <img class="image responsive image resize " src="https://i.pinimg.com/564x/23/22/34/2322349f796a11175d91876fcd079412.jpg" alt="" />
+          <h3 class="rice and beef">chawal with chicken</h3>
+          <p class="food-price">$10.99</p>
+          <button class="order-button" onclick="addToCart('CWc', 12.99)">Order</button>
+        </div>
+      </div>
+
+      
+        <div class="card-1">
+          <img class="image responsive image resize" src="https://i.pinimg.com/564x/c1/4a/5a/c14a5a88b51d4f03a39898cf1e6cda59.jpg" alt="Food 2" />
+          <h3 class="food-name">ugali with beef</h3>
+          <p class="food-price">$10.99</p>
+          <button class="order-button" onclick="addToCart('uWb', 10.99)">Order</button>
+        </div>
+        </div>
+        <div class="card-1">
+          <img class="image responsive image resize" src="https://i.pinimg.com/564x/4a/4c/f9/4a4cf9d255205b3d78bad4589e9eda70.jpg" alt="Food 2" />
+          <h3 class="food-name">burger and chips</h3>
+          <p class="food-price">$10.99</p>
+          <button class="order-button" onclick="addToCart('bAc', 10.99)">Order</button>
+        </div>
+        <div class="card-1">
+          <img class="image responsive image resize" src="https://i.pinimg.com/564x/69/c8/03/69c803a6b9ea7a52c8715f570bf3fed0.jpg" alt="Food 2" />
+          <h3 class="food-name">spagheti</h3>
+          <p class="food-price">$10.99</p>
+          <button class="order-button" onclick="addToCart('spag', 10.99)">Order</button>
+        </div>
+
+        <!-- Add more food items as needed -->
+      </div>
+
+      
+
+   
+    <!-- Extra Card Section  -->
+
+    <div class="container background">
+      <div class="haif">
+        <img src="https://i.pinimg.com/564x/55/2a/9a/552a9a5be40ed7453e934428fb78a794.jpg" alt="about-img" />
+      </div>
+      <div class="haif">
+        <br />
+        <br />
+        <h2>Meal</h2>
+        <p>
+          🍟 Crispy Golden Fries: The Perfect Sidekick! 🍟<br>No burger is complete without a side of fries, and we've got you covered! Our crispy golden <br>fries are the perfect companion to our burgers, cooked to a tantalizing golden brown and<br> seasoned to enhance their irresistible flavor. Savor each crunchy bite as you indulge in the<br> perfect balance of soft, fluffy insides and a satisfying crispy exterior. These fries will have you<br> reaching for more, guaranteed!
+        </p>
+      </div>
+    </div>
+
+    <!-- Fotter Area Style  -->
+    <footer class="footer">
+      <div class="foot-img">
+        <img src="img/meal/hd-3.png" alt="" />
+        <p>Let's Talk About Everythink</p>
+      </div>
+      <div class="icon">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-google-plus-g"></i>
+        <p>@Copy Right Abdallah</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+
+  </body>
+</html>

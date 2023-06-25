@@ -1,0 +1,167 @@
+/* Reset Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Navbar Styles */
+
+.navbar-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo a {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.logo i {
+  color: #f76b1c;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar a {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+.navbar a.active {
+  color: #f76b1c;
+}
+
+.add-box {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  padding: 10px;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+}
+
+.add-box i {
+  color: #f76b1c;
+  margin-right: 5px;
+}
+
+.cart-icon {
+  position: relative;
+  cursor: pointer;
+}
+
+.cart-icon i {
+  font-size: 24px;
+  color: #333;
+}
+
+.cart-items {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  background-color: #f76b1c;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 50%;
+}
+
+/* Cart Content Styles */
+
+.cart-content {
+  position: absolute;
+  top: 70px;
+  right: 0;
+  width: 280px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: none;
+  z-index: 999;
+}
+
+.cart-content h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+#cartItemsList {
+  list-style-type: none;
+  padding: 10px;
+}
+
+#cartItemsList li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+/* Top Banner Styles */
+
+section {
+  display: flex;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.haif {
+  flex: 1;
+}
+
+.haif img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.haif h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.haif p {
+  font-size: 18px;
+  margin-bottom :0;
+
+}
